@@ -8,7 +8,7 @@ gem 'rails', '4.0.2'
 gem 'rails_12factor', '0.0.2'
 
 gem 'sass-rails', '~> 4.0.0'
-gem 'bootstrap-sass', '~> 3.1.0'
+#gem 'bootstrap-sass'
 
 gem 'simple_form'
 
