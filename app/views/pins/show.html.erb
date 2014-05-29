@@ -7,6 +7,11 @@
     autor: <%= @pin.user.name %></small>
 </p>
 
+<%= image_tag @pin.image.url %>
+<%= image_tag @pin.image.url(:medium) %>
+
+
+
 <% if current_user == @pin.user %>
 <%= link_to 'Edit', edit_pin_path(@pin) %>
 

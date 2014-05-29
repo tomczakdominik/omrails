@@ -1,7 +1,10 @@
 <tbody>
-<tr><% if current_user == pin.user %>
+<tr>
         <td><%= pin.description %></td>
+        <td><%= pin.user.name %></td>
+        <td><%= image_tag pin.image.url(:thumb) %></td>
         <td><%= link_to 'Show', pin %></td>
+  <% if current_user == pin.user %>
         <td><%= link_to 'Edit', edit_pin_path(pin) %></td>
         <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       <% end %></tr>
